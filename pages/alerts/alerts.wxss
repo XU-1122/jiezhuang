@@ -1,0 +1,127 @@
+.container {
+  padding: 0; /* 移除顶部和底部的内边距 */
+  background-color: #f0f0f0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* 确保子元素宽度拉伸 */
+}
+
+.alert-title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #ff0000; /* 红色用于强调预警 */
+  margin-bottom: 20rpx;
+}
+
+.alert-list {
+  flex: 1; /* 使列表占据剩余空间 */
+  background-color: #ffffff;
+  padding: 20rpx;
+  border-radius: 16rpx; /* 增加圆角 */
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.1); /* 增加阴影 */
+  margin: 10rpx; /* 增加外边距 */
+}
+
+.alert-card {
+  width: 100%; /* 确保卡片宽度为100% */
+  margin-bottom: 20rpx;
+  padding: 20rpx;
+  border-radius: 12rpx;
+  background-color: #f9f9f9; /* 更柔和的背景色 */
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.1);
+  position: relative; /* 为绝对定位的子元素提供参考 */
+}
+
+.status-badge {
+  position: absolute;
+  top: 10rpx;
+  right: 10rpx;
+  background-color: #ff4d4f; /* 更鲜艳的红色 */
+  color: #ffffff; /* 白色文字 */
+  padding: 5rpx 15rpx;
+  border-radius: 12rpx;
+  font-size: 24rpx;
+  text-align: center;
+}
+
+.dismiss-button {
+  position: absolute;
+  bottom: 10rpx;
+  right: 10rpx;
+  background-color: #1890ff;
+  color: #ffffff;
+  padding: 8rpx 20rpx;
+  border-radius: 12rpx;
+  font-size: 24rpx;
+  text-align: center;
+  border: none;
+  box-shadow: 0 2rpx 4rpx rgba(0, 0, 0, 0.1);
+  min-width: 100rpx;
+}
+
+.alert-id, .alert-info, .alert-time {
+  display: block;
+  font-size: 28rpx;
+  color: #333;
+  margin-bottom: 10rpx;
+}
+
+.dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog-content {
+  width: 90%;
+  background-color: #ffffff;
+  padding: 30rpx;
+  border-radius: 16rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.2);
+}
+
+.dialog-title {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+  color: #333;
+}
+
+.solution-input {
+  width: 100%;
+  height: 120rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  padding: 10rpx;
+  border: 1rpx solid #ddd;
+  border-radius: 8rpx;
+  font-size: 28rpx;
+}
+
+.dialog-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dialog-buttons button {
+  background-color: #1890ff;
+  color: #ffffff;
+  padding: 10rpx 20rpx;
+  border-radius: 8rpx;
+  font-size: 24rpx;
+  border: none;
+  box-shadow: 0 2rpx 4rpx rgba(0, 0, 0, 0.1);
+  flex: 1;
+  margin: 0 5rpx;
+}
+
+.dialog-buttons button:first-child {
+  background-color: #f5222d; /* 取消按钮的红色 */
+} 

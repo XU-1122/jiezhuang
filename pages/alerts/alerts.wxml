@@ -1,0 +1,30 @@
+<view class="container">
+  <view class="alert-list">
+    <block wx:for="{{alerts}}" wx:key="id">
+      <view class="alert-card">
+        <view class="status-badge" style="background-color: {{item.status === '审核中' ? '#800080' : '#ff0000'}};">
+          {{item.status === '审核中' ? '审核中' : '未解除'}}
+        </view>
+        <text class="alert-id">编号: {{item.id}}</text>
+        <text class="alert-info">报警信息: {{item.alert}}</text>
+        <text class="alert-time">报警时间: {{item.alertTime}}</text>
+        <button class="dismiss-button" bindtap="showDismissDialog" data-id="{{item.id}}">解除预警</button>
+      </view>
+    </block>
+  </view>
+
+  <!-- 自定义对话框 -->
+  <view wx:if="{{showDialog}}" class="dialog">
+    <view class="dialog-content">
+      <text class="dialog-title">解除预警</text>
+      <view>员工工号: 12345</view>
+      <view>报警信息: {{currentAlert.alert}}</view>
+      <view>请输入处理方案:</view>
+      <textarea class="solution-input" bindinput="handleInput" placeholder="输入处理方案..."></textarea>
+      <view class="dialog-buttons">
+        <button bindtap="cancelDialog">取消</button>
+        <button bindtap="confirmDismiss">提交</button>
+      </view>
+    </view>
+  </view>
+</view> 

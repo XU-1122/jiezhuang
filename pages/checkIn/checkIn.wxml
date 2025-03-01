@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="marker-details">
+    <view class="detail-item">编号: {{marker.id}}</view>
+    <view class="detail-item">状态: {{marker.status}}</view>
+    <view class="detail-item">级别: {{marker.level}}</view>
+    <view class="detail-item">建立日期: {{marker.date}}</view>
+    <view class="detail-item">所属界限: {{marker.boundary}}</view>
+    <view class="detail-item">所属单位: {{marker.unit}}</view>
+    <view class="detail-item">所在地址: {{marker.address}}</view>
+    <view class="detail-item">剩余电量: {{marker.battery}}</view>
+  </view>
+  <button class="photo-check-in-button" bindtap="takePhoto">拍照打卡</button>
+  <image wx:if="{{photoPath}}" class="photo-thumbnail" src="{{photoPath}}" mode="aspectFit" />
+  <button wx:if="{{photoPath}}" class="confirm-upload-button" bindtap="confirmUpload">确认上传</button>
+</view> 

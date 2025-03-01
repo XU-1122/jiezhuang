@@ -1,0 +1,124 @@
+/* pages/boundaryInfo/boundaryInfo.wxss */
+.container {
+  padding: 20rpx;
+  background-color: #f0f0f0;
+}
+
+.marker-card {
+  margin-bottom: 20rpx;
+  padding: 20rpx;
+  border-radius: 8rpx;
+  background-color: #ffffff;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+
+.card-title {
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.card-status {
+  font-size: 28rpx;
+}
+
+.status-online {
+  color: green;
+}
+
+.status-offline {
+  color: gray;
+}
+
+.card-body text {
+  display: block;
+  margin-bottom: 8rpx;
+  font-size: 28rpx;
+  color: #666;
+  font-weight: normal;
+}
+
+.battery-high {
+  color: green; /* 电量高于20时的颜色 */
+}
+
+.battery-low {
+  color: red; /* 电量低于或等于20时的颜色 */
+}
+
+.check-in-button {
+  width: 100rpx;
+  height: 60rpx;
+  background-color: #007aff;
+  color: #ffffff;
+  border-radius: 8rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  position: absolute;
+  right: 20rpx;
+  bottom: 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.action-button {
+  width: 100rpx;
+  height: 60rpx;
+  background-color: #007aff;
+  color: #ffffff;
+  border-radius: 8rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  position: absolute;
+  right: 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.locate-button {
+  bottom: 90rpx; /* 调整按钮间距 */
+}
+
+.check-in-button {
+  bottom: 20rpx;
+}
+
+.address {
+  word-wrap: break-word; /* 允许长单词换行 */
+  word-break: break-all; /* 强制长单词换行 */
+  white-space: normal; /* 允许文本换行 */
+  overflow: hidden; /* 隐藏溢出内容 */
+  text-overflow: ellipsis; /* 使用省略号表示溢出内容 */
+  display: block; /* 确保元素是块级元素 */
+  max-width: 100%; /* 确保宽度不超过容器 */
+  font-size: 28rpx; /* 确保字体大小一致 */
+  color: #666; /* 确保字体颜色一致 */
+  font-weight: normal; /* 确保字体粗细一致 */
+}
+
+.alert-info {
+  display: block;
+  margin-top: 8rpx;
+  font-size: 28rpx;
+  color: #ff9800; /* 使用橙色表示预警信息 */
+  font-weight: bold;
+}
+
+.title-alert {
+  color: red; /* 异常信息时编号的颜色 */
+}
+
+.title-normal {
+  color: green; /* 无异常信息时编号的颜色 */
+}

@@ -1,0 +1,29 @@
+<!--pages/boundaryInfo/boundaryInfo.wxml-->
+<view class="container">
+  <scroll-view scroll-y="true" style="height: 100vh;" bindscrolltolower="onReachBottom" bindrefresherrefresh="onPullDownRefresh" refresher-enabled="true">
+    <block wx:for="{{boundaryMarkers}}" wx:key="id">
+      <view class="marker-card">
+        <view class="card-header">
+          <text class="card-title {{item.titleClass}}">编号: {{item.id}}</text>
+          <text class="card-status {{item.status === '在线' ? 'status-online' : 'status-offline'}}">{{item.status}}</text>
+        </view>
+        <view class="card-body">
+          <text>级别: {{item.level}}</text>
+          <text>建立日期: {{item.date}}</text>
+          <text>所属界限: {{item.boundary}}</text>
+          <text>所属单位: {{item.unit}}</text>
+          <text>所在地址:</text>
+          <view class="address">
+            {{item.address}}
+          </view>
+          <text class="{{item.batteryClass}}">剩余电量: {{item.battery}}</text>
+          <view class="marker-info">
+            <text class="marker-alert">预警信息: {{item.alert}}</text>
+          </view>
+        </view>
+        <button class="action-button locate-button" bindtap="locateMarker" data-id="{{item.id}}">定位界桩</button>
+        <button class="action-button check-in-button" bindtap="handleCheckIn" data-id="{{item.id}}">界桩打卡</button>
+      </view>
+    </block>
+  </scroll-view>
+</view>

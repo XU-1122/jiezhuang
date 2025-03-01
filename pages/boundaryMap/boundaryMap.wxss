@@ -1,0 +1,72 @@
+/* pages/boundaryMap/boundaryMap.wxss */
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.icon-button {
+  position: absolute;
+  width: 60rpx;
+  height: 60rpx;
+  background-color: #ffffff;
+  border-radius: 8rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.locate-button {
+  top: 20rpx;
+  right: 20rpx;
+}
+
+.layer-button {
+  top: 100rpx;
+  right: 20rpx;
+}
+
+page {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.navigation-container {
+  position: absolute;
+  top: 20rpx;
+  left: 20rpx;
+  right: 20rpx;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+
+.destination-input {
+  flex: 1;
+  height: 60rpx;
+  margin-right: 10rpx;
+  padding: 0 10rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 8rpx;
+}
+
+.navigate-button {
+  width: 100rpx;
+  height: 60rpx;
+  background-color: #007aff;
+  color: #ffffff;
+  border-radius: 8rpx;
+  text-align: center;
+  line-height: 60rpx;
+}

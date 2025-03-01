@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/boundaryInfo/boundaryInfo",
+    "pages/boundaryMap/boundaryMap",
+    "pages/checkIn/checkIn",
+    "pages/announcements/announcements",
+    "pages/myInfo/myInfo",
+    "pages/alerts/alerts"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "智慧界桩管理系统",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/boundaryInfo/boundaryInfo",
+        "text": "界桩信息",
+        "iconPath": "images/info.png",
+        "selectedIconPath": "images/info-active.png"
+      },
+      {
+        "pagePath": "pages/boundaryMap/boundaryMap",
+        "text": "界桩地图",
+        "iconPath": "images/map.png",
+        "selectedIconPath": "images/map-active.png"
+      },
+      {
+        "pagePath": "pages/announcements/announcements",
+        "text": "通知公告",
+        "iconPath": "images/announcement.png",
+        "selectedIconPath": "images/announcement-active.png"
+      },
+      {
+        "pagePath": "pages/alerts/alerts",
+        "text": "预警信息",
+        "iconPath": "images/alert.png",
+        "selectedIconPath": "images/alert-active.png"
+      },
+      {
+        "pagePath": "pages/myInfo/myInfo",
+        "text": "我的信息",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my-active.png"
+      }
+    ],
+    "color": "#8a8a8a",
+    "selectedColor": "#1c1c1c",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black"
+  }
+}

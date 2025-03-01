@@ -1,0 +1,9 @@
+<scroll-view class="container" scroll-y="true" bindscrolltolower="onReachBottom">
+  <block wx:for="{{announcements}}" wx:key="title">
+    <view class="announcement-card">
+      <text class="announcement-title">{{item.title}}</text>
+      <text class="announcement-content">{{item.content}}</text>
+      <text class="announcement-footer">{{item.author}} {{item.date}}</text>
+    </view>
+  </block>
+</scroll-view> 

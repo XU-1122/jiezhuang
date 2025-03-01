@@ -1,0 +1,18 @@
+<!--pages/boundaryMap/boundaryMap.wxml-->
+<map
+  id="map"
+  longitude="{{longitude}}"
+  latitude="{{latitude}}"
+  scale="16"
+  show-location
+  enable-satellite="{{isSatellite}}"
+  style="width: 100%; height: 100vh;"
+  markers="{{markers}}"
+  bindmarkertap="onMarkerTap"
+></map>
+<view class="icon-button locate-button" bindtap="locate">
+  <image src="/images/locate.png" class="icon-image" />
+</view>
+<view class="icon-button layer-button" bindtap="toggleLayer">
+  <image src="/images/layer.png" class="icon-image" />
+</view>
