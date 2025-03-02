@@ -1,0 +1,8 @@
+<view class="login-container">
+  <view class="login-card">
+    <text class="login-title">欢迎使用智慧界桩管理系统</text>
+    <input class="login-input" placeholder="输入账号" bindinput="handleAccountInput" />
+    <input class="login-input" type="password" placeholder="输入密码" bindinput="handlePasswordInput" />
+    <button class="login-button" bindtap="handleLogin">登录</button>
+  </view>
+</view> 

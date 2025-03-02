@@ -65,6 +65,11 @@
   font-size: 28rpx;
   color: #333;
   margin-bottom: 10rpx;
+  margin-left: -20rpx; /* 向左移动文本 */
+}
+
+.alert-info {
+  margin-left: -20rpx; /* 向左移动文本 */
 }
 
 .dialog {
