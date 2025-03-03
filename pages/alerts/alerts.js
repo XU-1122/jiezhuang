@@ -12,8 +12,11 @@ Page({
 
   loadAlerts() {
     const app = getApp();
-    // 不再过滤 alertTime，显示所有界桩
-    const alerts = app.globalData.boundaryMarkers;
+    // 过滤掉 alert 为 '暂无异常' 的项目
+    const alerts = app.globalData.boundaryMarkers.filter(item => {
+      return item.alert && item.alert !== '暂无异常';
+    });
+
     this.setData({ alerts });
   },
 
@@ -71,7 +74,6 @@ Page({
     });
 
     // 更新全局数据
-    const app = getApp();
     const updatedMarkers = app.globalData.boundaryMarkers.map(marker => {
       if (marker.id === id) {
         return { ...marker, status: '审核中' }; // 更新状态为审核中
@@ -85,9 +87,7 @@ Page({
   },
 
   onPullDownRefresh() {
-    // 重新加载数据
     this.loadAlerts();
-    // 停止下拉刷新动画
     wx.stopPullDownRefresh();
   }
 }); 

@@ -1,4 +1,4 @@
-<scroll-view class="container" scroll-y="true" bindscrolltolower="onReachBottom">
+<scroll-view class="container" scroll-y="true" bindscrolltoupper="onReachTop">
   <block wx:for="{{announcements}}" wx:key="title">
     <view class="announcement-card">
       <text class="announcement-title">{{item.title}}</text>

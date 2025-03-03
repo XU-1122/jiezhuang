@@ -73,5 +73,17 @@ Page({
 
   getUserProfile() {
     // 移除获取用户信息的逻辑
+  },
+
+  handleLogout() {
+    wx.showToast({
+      title: '已退出登录',
+      icon: 'success',
+      duration: 2000
+    });
+    // 跳转到登录页面
+    wx.redirectTo({
+      url: '/pages/login/login'
+    });
   }
 })

@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/login/login",
     "pages/boundaryInfo/boundaryInfo",
     "pages/boundaryMap/boundaryMap",
     "pages/checkIn/checkIn",
@@ -9,9 +10,10 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "智慧界桩管理系统",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "小程序",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#eeeeee"
   },
   "style": "v2",
   "componentFramework": "glass-easel",

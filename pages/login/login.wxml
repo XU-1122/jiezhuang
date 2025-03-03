@@ -1,0 +1,11 @@
+<view class="login-container">
+  <view class="login-card">
+    <text class="login-title">欢迎使用智慧界桩管理系统</text>
+    <input class="login-input" placeholder="输入账号" bindinput="handleAccountInput" />
+    <view class="password-container">
+      <input class="login-input" type="{{passwordVisible ? 'text' : 'password'}}" placeholder="输入密码" value="{{password}}" bindinput="handlePasswordInput" />
+      <image class="toggle-password" src="{{passwordVisible ? '/images/eye-open.png' : '/images/eye-closed.png'}}" bindtap="togglePasswordVisibility" />
+    </view>
+    <button class="login-button" bindtap="handleLogin">登录</button>
+  </view>
+</view> 

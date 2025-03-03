@@ -2,6 +2,7 @@
   padding: 0; /* 移除顶部和底部的内边距 */
   background-color: #f0f0f0;
   min-height: 100vh;
+  overflow-x: hidden; /* 禁止水平滚动 */
   display: flex;
   flex-direction: column;
   align-items: stretch; /* 确保子元素宽度拉伸 */
@@ -24,8 +25,8 @@
 }
 
 .alert-card {
-  width: 100%; /* 确保卡片宽度为100% */
-  margin-bottom: 20rpx;
+  width: 97%; /* 确保卡片宽度为100% */
+  margin-bottom: 10rpx;
   padding: 20rpx;
   border-radius: 12rpx;
   background-color: #f9f9f9; /* 更柔和的背景色 */
@@ -47,8 +48,8 @@
 
 .dismiss-button {
   position: absolute;
-  bottom: 10rpx;
-  right: 10rpx;
+  bottom: 20rpx;
+  right: -1rpx;
   background-color: #1890ff;
   color: #ffffff;
   padding: 8rpx 20rpx;
@@ -57,7 +58,7 @@
   text-align: center;
   border: none;
   box-shadow: 0 2rpx 4rpx rgba(0, 0, 0, 0.1);
-  min-width: 100rpx;
+  min-width: 0rpx;
 }
 
 .alert-id, .alert-info, .alert-time {
@@ -65,6 +66,11 @@
   font-size: 28rpx;
   color: #333;
   margin-bottom: 10rpx;
+  margin-left: -20rpx; /* 向左移动文本 */
+}
+
+.alert-info {
+  margin-left: -20rpx; /* 向左移动文本 */
 }
 
 .dialog {
